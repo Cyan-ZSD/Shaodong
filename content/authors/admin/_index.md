@@ -1,29 +1,19 @@
 ---
 bio: My research interests include distributed robotics, mobile computing and programmable
   matter.
-education:
-  courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
-first_name: Shiung Wu
+  
+    
+first_name: Shaodong
+
 highlight_name: true
-interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
-last_name: Chien
-name_pronunciation: Chien Shiung Wu
+
+last_name: ZHANG
+
 organizations:
-- name: Stanford University
+- name: Osaka University
   url: https://www.stanford.edu/
-role: Professor of Artificial Intelligence
+role: Data Analyst on International Relations
+
 skills:
 - items:
   - description: ""
@@ -61,6 +51,7 @@ skills:
     name: Photography
     percent: 80
   name: Hobbies
+  
 social:
 - icon: envelope
   icon_pack: fas
@@ -83,11 +74,15 @@ social:
 - icon: cv
   icon_pack: ai
   link: uploads/resume.pdf
+  
 status:
   icon: ☕️
+  
 superuser: true
-title: 吳健雄
+
+title: Shaodong ZHANG
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Shaodong ZHANG is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+
 {style="text-align: justify;"}

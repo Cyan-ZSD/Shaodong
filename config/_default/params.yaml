@@ -6,9 +6,9 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
+  theme_day: ocean
   theme_night: minimal
-  font: minimal
+  font: native
   font_size: L
 
 # SEO
@@ -34,18 +34,18 @@ marketing:
 header:
   navbar:
     enable: true
-    align: l
+    align: r
     show_logo: true
     show_language: false
     show_day_night: true
-    show_search: true
+    show_search: false
     highlight_active_link: true
 
 # Site footer
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© Shaodong Blog 2021-{year} This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -84,10 +84,10 @@ features:
     commento:
       url: ''
     giscus:
-      repo: ''
-      repo_id: ''
-      category: ''
-      category_id: ''
+      repo: 'Cyan-ZSD/Shaodong'
+      repo_id: 'R_kgDOKs0T1w'
+      category: 'Announcements'
+      category_id: 'DIC_kwDOKs0T184Ca8m_'
   search:
     provider: wowchemy
     algolia:
