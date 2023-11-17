@@ -64,6 +64,7 @@ sections:
     columns: "2"
     view: compact
   id: posts
+  
 - block: portfolio
   content:
     buttons:
@@ -84,19 +85,9 @@ sections:
     view: showcase
   id: projects
 
-- block: collection
-  content:
-    filters:
-      folders:
-      - event
-    title: Recent & Upcoming Talks
-  design:
-    columns: "2"
-    view: compact
-  id: talks
 - block: tag_cloud
   content:
-    title: Popular Topics
+    title: Tags
   design:
     columns: "2"
 
