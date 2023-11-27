@@ -31,4 +31,8 @@ sections:
 
 ## About
 
-Hi, this is Shaodong!
+After 3 years of writing on my own, I ended up building this blog to share my thoughts, as I volunteered to join the open-source world from which I learned a lot.
+
+I used to focus on the qualitative world, but slowly realized the importance of delving into the quantitative realm in 2021 during my master's program in Japan, where I began exploring programming on my own, and **R** has since then stayed with me. This journey has exposed me to a wider world in which I am continually learning Python, SQL, and web development.
+
+I find inspiration in Viktor Frankl's quote: *"Choose your attitude in any given set of circumstances."* And I resonate with Aamir Khan's saying, *"Chase Excellence, Success will follow."*
