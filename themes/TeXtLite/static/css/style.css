@@ -1,10 +1,10 @@
 :root {
-    --skin: #B3CCD9;
-    --landing-section-skin: #A3C8DA;
+    --skin: #FFFFFF;
+    --landing-section-skin: #F7F7F7;
     --header-text: rgba(255, 255, 255, 0.904);
-    --header-background: #64A9CB;
+    --header-background: #4350AF;
     --header-background-darker: #4B2C20;
-    --link-transitiion-light: #7AD1FD;
+    --link-transitiion-light: #E4EA25;
     --link-transitiion-dark: #c57049;
     --link: #d48f41;
     --grey-text: rgb(105, 105, 105);
@@ -426,7 +426,7 @@ pre {
 footer {
     margin-top: auto;
     text-align: center;
-    background-color: #64A9CB;
+    background-color: #3B4CC8;
     padding-top: 2em;
     padding-bottom: 1em;
     font-size: 0.8em;
