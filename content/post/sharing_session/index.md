@@ -1,5 +1,5 @@
 ---
-title: 记一次心得分享会
+title: 记一次心得分享
 author: Shaodng ZHANG
 date: '2023-11-29'
 slug: ''
