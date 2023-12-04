@@ -14,7 +14,7 @@ disqus: true
 
 前一阵子我主动请缨参加了一次研究生毕业院校(以下匿称该校为“A校”)的分享会，时长10分钟，主要是向后辈总结介绍自己过去一年的研究生生活经验。会后我计划为此留下中文稿，所以写下这篇博文。分享会上使用的演示文稿可以在下方浏览，同时我也会以文字的形式在文中呈现，方便读者阅读跟进。
 
-<embed src="/Users/cyan/Desktop/Sharing.pdf" type="application/pdf" width="70%" height="420px">
+<embed src="/Users/cyan/Shaodong/content/post/sharing_session/Sharing.pdf" type="application/pdf" width="70%" height="420px">
 _提示：你可以使用键盘的左右按键来逐页显示幻灯片。_
 
 ## 目录
