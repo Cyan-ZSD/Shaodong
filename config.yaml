@@ -37,7 +37,7 @@ params:
     facebook: " "
     twitter: " "
   icon:
-    logo: " "
+    logo: "/themes/TeXtLite/static/social/logo.svg"
     email: "/themes/TeXtLite/static/social/email.svg"
     twitter: "/themes/TeXtLite/static/social/twitter.svg"
     github: "/themes/TeXtLite/static/social/github.svg"
