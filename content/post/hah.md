@@ -1,5 +1,5 @@
 ---
-title: 外外记一次心得分享会
+title: 测试
 author: Shaodng ZHANG
 date: '2023-11-29'
 slug: ''
@@ -11,4 +11,4 @@ tags:
 draft: yes
 ---
 
-前一阵子我主动请缨参
+测试测试
