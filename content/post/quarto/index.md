@@ -2,7 +2,7 @@
 title: TeXtLite Theme with Quarto
 subtitle: "Writing Hugo Blog Post in Quarto"
 description: "Quarto, Hugo, R, markdeep"
-date: '2023-03-25'
+date: '2023-01-25'
 aliases:
     - /demo
 katex: true
