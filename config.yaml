@@ -43,7 +43,7 @@ params:
     github: "/themes/TeXtLite/static/social/github.svg"
     facebook: "/themes/TeXtLite/static/social/facebook.svg"
   comments:
-    utterances: "liao961120/comments"
+    utterances: "Cyan-ZSD/comment-system"
     disqus: "Shaodong-disqus"
     # Comment systems to include by default
     default:
