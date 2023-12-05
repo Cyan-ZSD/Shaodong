@@ -8,7 +8,6 @@ tags:
   - 中文
   - 幻灯片
   - Slides
-draft: yes
 disqus: true
 ---
 
