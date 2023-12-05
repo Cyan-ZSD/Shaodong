@@ -9,6 +9,8 @@ tags:
   - 幻灯片
   - Slides
 disqus: true
+latex_engine: xelatex
+header-includes: \usepackage{ctex}
 ---
 
 前一阵子我主动请缨参加了一次研究生毕业院校(以下匿称该校为“A校”)的分享会，时长10分钟，主要是向后辈总结介绍自己过去一年的研究生生活经验。会后我计划为此留下中文稿，所以写下这篇博文。分享会上使用的演示文稿可以在下方浏览，同时我也会以文字的形式在文中呈现，方便读者阅读跟进。
@@ -17,7 +19,7 @@ disqus: true
 <embed src="Sharing.pdf" type="application/pdf" width="80%" height="440px">
 
 
-*提示：你可以使用键盘的左右按键来逐页显示幻灯片。*
+*提示：你可以在Chrome浏览器里使用键盘的左右按键来逐页显示幻灯片。*
 
 ## 目录
 
@@ -48,7 +50,7 @@ disqus: true
 ![Methodology in International Relations by Year](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/isq/55/2/10.1111/j.1468-2478.2011.00653.x/2/m_ISQU_653_f7.jpeg?Expires=1703119159&Signature=43wPt-o78LqlnWp-NHtjpjTxdUXOJjRsAWQx7ZRAUZpLZkKp0qlnqV1KfeXfH7JGavfMkpfbMbYox3cpogM-U74VpAJiJkjL4IA~cr92dmwNkvEvvUjbkErpswfNOPq7qi6qIpDMZirxaei93CTgB90rZZ5GMi-0N~9R0XD6d-jGMv5uzklrhn-xFISR4swjUlr~tLW0cqVozJQIvj5BNLj59E36NmeyxeBpKpLsjqh~RrBjjTdC7c3JhK4wcSCqnyqP~SIQvOoeC0XLU2MCiuVda-G5pojo-5BClFPaYRXuiHXEXeysoGJB2H5dlO3a14jhxCPZ4d8OIl6DvB3DMg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
 
 
->其次，数据分析算是一门硬核技能，有助于提升我们的[核心竞争力](https://en.wikipedia.org/wiki/Core_competency),这对于将来找工作来说是很大的加分项[^3]。综上，数据分析类课程当仁不让的成为最重要的课程。
+>其次，数据分析算是一门硬核技能，有助于提升我们的核心竞争力,这对于将来找工作来说是很大的加分项[^3]。综上，数据分析类课程当仁不让的成为最重要的课程。
 
 [^3]: 我个人就是通过打造这一核心竞争力而入职了目前所从事的数据库管理岗位，在此之前我是一名妥妥的“文科生”。
 
