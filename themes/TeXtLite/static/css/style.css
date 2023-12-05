@@ -3,10 +3,10 @@
     --landing-section-skin: #F7F7F7;
     --header-text: rgba(255, 255, 255, 0.904);
     --header-background: #4350AF;
-    --header-background-darker: #4B2C20;
-    --link-transitiion-light: #E4EA25;
+    --header-background-darker: #2E65A4;
+    --link-transitiion-light: #7E9DC8;
     --link-transitiion-dark: #c57049;
-    --link: #d48f41;
+    --link: #2286F8;
     --grey-text: rgb(105, 105, 105);
     --grey-text-darker: rgb(71, 71, 71);
     --inline-code-skin: #E4CEC0;
@@ -289,7 +289,7 @@ blockquote p {
 }
 
 .article_header .tags>a.highlight {
-    background: green;
+    background: #ACBB3F;
 }
 
 .post .article_header .tags>a:hover {
