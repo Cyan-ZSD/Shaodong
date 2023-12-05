@@ -2,7 +2,7 @@ baseURL: "https://shaodong.name"
 languageCode: "en-us"
 title: "Shaodong's Blog"
 theme: "TeXtLite"
-disqusShortname: "disqus-shortname-here"
+disqusShortname: "Shaodong-disqus"
 footnoteReturnLinkContents: "↩"
 
 permalinks:
@@ -44,7 +44,7 @@ params:
     facebook: "/themes/TeXtLite/static/social/facebook.svg"
   comments:
     utterances: "liao961120/comments"
-    disqus: "y-f-liao-s-page"
+    disqus: "Shaodong-disqus"
     # Comment systems to include by default
     default:
       - utterances
