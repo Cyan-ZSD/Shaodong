@@ -13,16 +13,16 @@ disqus: true
 
 前一阵子我主动请缨参加了一次研究生毕业院校(以下匿称该校为“A校”)的分享会，时长10分钟，主要是向后辈总结介绍自己过去一年的研究生生活经验。会后我计划为此留下中文稿，所以写下这篇博文。分享会上使用的演示文稿可以在下方浏览，同时我也会以文字的形式在文中呈现，方便读者阅读跟进。
 
-<embed src="/Users/cyan/Shaodong/content/post/sharing_session/Sharing.pdf" type="application/pdf" width="75%" height="420px">
+<embed src="Sharing.pdf" type="application/pdf" width="80%" height="440px">
 
 *提示：你可以使用键盘的左右按键来逐页显示幻灯片。*
 
 ## 目录
 
 -   [重点课程](#重点课程)
--   ["水课"的情绪调节](#"水课"的情绪调节)
--   [目标导向&学以致用](#目标导向&学以致用)
--   ["笨鸟"先申](#"笨鸟"先申)
+-   ["水课"的情绪调节](#水课的情绪调节)
+-   [目标导向&学以致用](#目标导向学以致用)
+-   ["笨鸟"先申](#笨鸟先申)
 -   [享受马德里](#享受马德里)
 
 > 为了让听众可以对我演讲的内容先有一个大致了解，我一般会在幻灯片的第一页加上目录。在我看来只有分享内容本身足够吸引人或是充满循序渐进的惊喜的情况下（比如苹果公司的产品[发布会](https://www.youtube.com/live/ux6zXguiqxM?si=JZkCPqDQx3Kh1UoW&t=483)），幻灯片才可以省略目录。显然，经验分享就像一场学术报告：本身不一定足够吸引人，同时也很难产生惊喜。因此，我选择先列出目录，让听众了解梗概，顺便如果感觉无趣的话，可以尽早离席，以节省自己的时间。
@@ -43,7 +43,7 @@ disqus: true
 [^1]: 即我认为的那些值得应该拿出大部分甚至全部精力关照的课程。
 [^2]: Daniel Maliniak, Amy Oakes, Susan Peterson, Michael J. Tierney, International Relations in the US Academy, International Studies Quarterly, Volume 55, Issue 2, June 2011, Pages 437–464, https://doi.org/10.1111/j.1468-2478.2011.00653.x
 
-![Methodology in International Relations by Year](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/isq/55/2/10.1111/j.1468-2478.2011.00653.x/2/m_ISQU_653_f7.jpeg?Expires=1703119159&Signature=43wPt-o78LqlnWp-NHtjpjTxdUXOJjRsAWQx7ZRAUZpLZkKp0qlnqV1KfeXfH7JGavfMkpfbMbYox3cpogM-U74VpAJiJkjL4IA~cr92dmwNkvEvvUjbkErpswfNOPq7qi6qIpDMZirxaei93CTgB90rZZ5GMi-0N~9R0XD6d-jGMv5uzklrhn-xFISR4swjUlr~tLW0cqVozJQIvj5BNLj59E36NmeyxeBpKpLsjqh~RrBjjTdC7c3JhK4wcSCqnyqP~SIQvOoeC0XLU2MCiuVda-G5pojo-5BClFPaYRXuiHXEXeysoGJB2H5dlO3a14jhxCPZ4d8OIl6DvB3DMg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA){width=50%}
+![Methodology in International Relations by Year](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/isq/55/2/10.1111/j.1468-2478.2011.00653.x/2/m_ISQU_653_f7.jpeg?Expires=1703119159&Signature=43wPt-o78LqlnWp-NHtjpjTxdUXOJjRsAWQx7ZRAUZpLZkKp0qlnqV1KfeXfH7JGavfMkpfbMbYox3cpogM-U74VpAJiJkjL4IA~cr92dmwNkvEvvUjbkErpswfNOPq7qi6qIpDMZirxaei93CTgB90rZZ5GMi-0N~9R0XD6d-jGMv5uzklrhn-xFISR4swjUlr~tLW0cqVozJQIvj5BNLj59E36NmeyxeBpKpLsjqh~RrBjjTdC7c3JhK4wcSCqnyqP~SIQvOoeC0XLU2MCiuVda-G5pojo-5BClFPaYRXuiHXEXeysoGJB2H5dlO3a14jhxCPZ4d8OIl6DvB3DMg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
 
 
 >其次，数据分析算是一门硬核技能，有助于提升我们的[核心竞争力](https://en.wikipedia.org/wiki/Core_competency),这对于将来找工作来说是很大的加分项[^3]。综上，数据分析类课程当仁不让的成为最重要的课程。
@@ -88,7 +88,7 @@ disqus: true
 -   完成既定计划的时间总比想象的要多
     - A校的学业压力临近毕业越来越大
     
-    ![正负相关示意图](/Users/cyan/Shaodong/content/post/sharing_session/3.png){width=65%}
+    ![正负相关示意图](3.png)
     
 -   UN申请是一场持久战
     -   海投、CV、CL的修改非常消耗时间和精力
