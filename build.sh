@@ -2,3 +2,4 @@
 hugo --minify
 printf "shaodong.name" > public/CNAME
 cp logo.ico public/
+cp -r redirects/* public/
