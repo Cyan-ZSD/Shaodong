@@ -21,7 +21,7 @@ format:
       df-print: tibble
 editor:
    render-on-save: false
-draft: true
+draft: false
 ---
 
 <figure>
