@@ -1,0 +1,602 @@
+<!doctype html>
+<html style='font-size:20px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+</style><title>对产后妈妈说的话</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='想对产后妈妈爸爸说的三句话'><span>想对产后妈妈爸爸说的三句话</span></h1><p><span>你肯定已经从无数过来人那里听过五花八门的坐月子“经验”了，包括但不仅限于产后妈妈月子里要忌水、忌风、忌动、忌辣、忌酸、忌凉……有趣的是，你甚至能从不同的人那里听到完全相反的“经验”，比如可以or不可以开空调，可以or不可以玩手机，可以出门遛弯or不可以出门遛弯等等。</span></p><p><span>这些所谓的经验其实不过是人们的感觉罢了。一万个人可以产生一万种感觉——每一位产后妈妈都有不同的身体素质，都置身于不同的时间、地点、家庭等环境中，能得出大相径庭，甚至截然相反的所谓“经验”也就不奇怪了。加之分娩前中后对于女性来说是刻骨铭心的事，这无限地放大了她们对此时收获的“经验”的珍视程度。所以，过来人怀着一片好心，恨不得把自己的宝贵“经验”全部塞进你脑子里。</span></p><p><span>然而，产后妈妈本就有</span><strong><span>将近五分之一</span></strong><span>的概率陷入产后抑郁症（Postpartum depression）</span><sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup><span>，此时，铺天盖地且无微不至的关怀向她们涌来，闺蜜的私房话、朋友的建议、七大姑八大姨的秘籍，更不消说来自婆婆的忠告了。这些无不加深产后妈妈的焦虑，影响她们坐月子期间的情绪。所以，</span></p><blockquote><p><span>正确的坐月子一定得是</span><strong><span>科学的</span></strong><sup class='md-footnote'><a href='#dfref-footnote-2' name='ref-footnote-2'>2</a></sup><span>:，而不是凭借非专业人士的经验和感觉来进行的。</span></p></blockquote><p><span>这是我想对产后妈妈们说的第一句话。</span></p><p><span>第二句话是说给产后爸爸的：</span></p><blockquote><p><span>人的心理比身体更脆弱，即便你可能对产后护理（月子）一无所知，但也请尽量在月子里陪在你老婆身旁，这能极大程度缓解她的焦虑，所谓</span><em><span>陪伴是最长情的告白</span></em><span>。</span></p></blockquote><p><span>第三句话是说给产后爸爸妈妈一同的：</span></p><blockquote><p><span>请你们参照一切可以参照的科学研究和权威建议来指导产后护理，迎接一个新生命是你们二位做出的决策，身体和孩子也是你们自己的，任何人除了你们二位以外对此没有直接利益攸关，就算是请月嫂or家里人来照顾，也请严格把关和监督</span><sup class='md-footnote'><a href='#dfref-footnote-3' name='ref-footnote-3'>3</a></sup><span>。</span></p></blockquote><p>&nbsp;</p><p><span>附上一篇是我在美国国家医学图书馆（United States National Library of Medicine）网站查阅到的产后妈妈护理指南，更新时间是2022年。全文的引用规范易读并且均来自科学研究，绝非非专业人士的一家之言，是较新的、有参考意义和价值的文章。文章讨论了包括但不仅限于应对产后</span><strong><span>阴道疼痛出血、母乳喂养、营养与锻炼、乳房肿胀、性行为、尿失禁、痔疮</span></strong><span>等一系列问题的方法，比较全面且有利于延伸。</span></p><p>&nbsp;</p><p><span>英文原文链接请点</span><a href='https://www.ncbi.nlm.nih.gov/books/NBK565875/'><span>这里</span></a><span>。其中要点的中文机翻如下（仅供参考）：</span></p><p>&nbsp;</p><blockquote><p><strong><span>阴道疼痛：</span></strong><span>产道创伤在自然分娩中是显而易见的。轻微的阴道裂伤在分娩后几周内愈合，而较大的裂伤可能需要更长时间。建议女性服用非处方药如布洛芬或扑热息痛缓解疼痛，坐在垫圈上，或用冰袋冷敷区域以减轻疼痛。医疗提供者应告知女性感染的迹象，如发热，并鼓励她们对持续严重疼痛寻求医疗帮助。</span></p><p><strong><span>阴道出血/分泌物：</span></strong><span>分娩后头3-4天，血性阴道分泌物（lochia rubra）较多，逐渐变为淡粉褐色（lochia serosa）。接下来的10-12天，变为黄白色（lochia alba）。建议女性如果持续出血较多（1小时内需要更换护垫或更多），应寻求医疗帮助，以排除滞留胎盘、子宫弛缓、极少见的侵袭性胎盘或凝血障碍等并发症。</span></p><p><strong><span>哺乳：</span></strong><span>哺乳对母亲和新生儿都有益。医疗提供者应评估新生儿的吸吮、吞咽、乳头类型和状态，以及抱婴儿的方式是否存在问题。提供支持、同侪支持和正规教育。医疗提供者应强烈鼓励女性哺乳新生儿，除非有禁忌症。世界卫生组织（WHO）建议至少进行四到六个月的每三到四小时一次的哺乳。哺乳减少新生儿患上胃肠道感染、儿童癌症和特应性湿疹的风险。每次产后随访时都应评估哺乳情况。</span></p><p><strong><span>营养和运动：</span></strong><span>产后体重滞留风险较高的女性包括孕期体重增加较多、黑人、和较低社会经济地位的女性，这同时增加了她们未来患肥胖和2型糖尿病的风险。建议女性摄入多样化、均衡的健康饮食，并恢复正常的膳食习惯。所有哺乳母亲需要额外摄入500卡路里。产后初期避免剧烈活动，首2-3周休息充足，然后逐渐开始进行非冲击性的活动，如步行，并逐渐恢复先前的活动。</span></p><p><strong><span>乳房充血：</span></strong><span>产后女性可能经历乳房饱满、坚实和疼痛。建议频繁哺乳两侧乳房以避免充血。建议女性使用温暖的毛巾或淋浴，或在哺乳之间放置冷毛巾以缓解疼痛。对于不哺乳的女性，鼓励她们使用冷敷，给予乳房有力的支持，需要时使用止痛药，以及机械抽取乳汁。</span></p><p><strong><span>膀胱和肠功能：</span></strong><span>鼓励监测并促进排尿，防止无症状的膀胱过度充盈。鼓励女性使用温和的缓泻剂，如多沙酮、洋车前子、比沙可定，如果分娩后3天未排便。另一个考虑因素是渗透性缓泻剂，如聚乙二醇和乳果糖。</span></p><p><strong><span>性关系：</span></strong><span>分娩后由于雌激素水平降低，性欲可能会减少。这可能需要长达1年的时间才能恢复，特别是对于正在哺乳的女性。通常适当的是给予安慰。建议女性等待会阴区域完全愈合后再恢复性活动，可能需要4-6周才能完全愈合。医疗提供者应在产后早期更自如地与女性讨论性健康问题。关于早期恢复性活动，需要提及避孕以防止意外怀孕。</span></p><p><strong><span>避孕：</span></strong><span>产前期是讨论产后避孕的最佳时机。在青少年中进行激励性面谈，讨论怀孕期间长效可逆避孕方法。对于哺乳的女性，通常首选非激素疗法。美国妇产科医师学会（ACOG）建议孕妇以孕激素为主的避孕方法为最佳选择。哺乳母亲不应使用联合雌激素-孕激素避孕药物，因为这可能影响乳汁产量。在孕激素方法中，孕激素为主的口服避孕药、甲羟孕酮乙酸盐注射和孕激素植入物是首选，因为它们不影响乳汁产量。阴道膜和宫颈帽应在子宫完全退缩后6至8周进行适配。宫内避孕装置通常最好在分娩后4至6周放置。哺乳不是一种有效的避孕选择。仅靠哺乳闭经法或其他避孕方法的失败率为2%，但必须满足特定的标准。妇女必须完全按需哺乳，闭经（即产后8周后无阴道出血），并拥有不到6个月的婴儿。随着婴儿开始吃固体食物，这种方法的可靠性会降低。无论是哺乳还是非哺乳的妇女都可以使用屏障避孕、宫内避孕器（铜释放和激素释放）和孕激素为主的避孕方法。WHO建议哺乳的女性在产后6周开始使用孕激素为主的避孕方法。ACOG建议联合雌激素-孕激素避孕药物使用应在产后3周开始，因为增加了血栓栓塞的风险。女性在尝试再次怀孕之前应至少等待6-18个月。</span></p><p><strong><span>教育：</span></strong><span>医疗提供者应提供关于新生儿护理的基本教育，如脐带护理、洗澡、哺乳以及免疫接种的重要性。</span></p><p><strong><span>流产、死胎或新生儿死亡：</span></strong><span>对于经历任何怀孕损失的母亲，确保后续随访至关重要。关键要素包括提供情感支持和丧失辅导；如有必要，转介到心理医生和支持小组。还要审查与损失相关的任何实验室或病理学研究，并就再发风险和未来怀孕计划进行咨询。</span></p><p><strong><span>产后抑郁症：</span></strong><span>在分娩后的第一周，短暂的抑郁症（产后抑郁症）非常普遍。女性可能会感到情绪低落、焦虑、情绪波动、哭泣、易怒和难以入睡。产后抑郁症通常在2周内解决。医疗提供者应建议她们在2周后继续出现抑郁症状、难以照顾自己或照顾新生儿，或有伤害自己或新生儿的想法时寻求医疗帮助。所有女性应使用经过验证的工具（爱丁堡产后抑郁症量表）进行情绪和焦虑障碍的筛查。美国儿科学会建议在婴儿的一个、两个、四个和六个月的健康访视中进行筛查。鼓励伴侣和家庭成员至少在产后第一周提供情感支持并照顾新生儿。英国国家卫生与护理卓越研究所建议在分娩后10至14天对所有产后妇女进行产后抑郁症的评估。</span></p><p><strong><span>亲密伴侣暴力：</span></strong><span>使用HARK（羞辱、害怕、强奸、踢）或HITS（伤害、侮辱、威胁、尖叫）工具评估亲密伴侣暴力。优先考虑患者的安全，并考虑转介到亲密伴侣暴力预防组织。</span></p><p><strong><span>尿失禁：</span></strong><span>压力性尿失禁是由于分娩期间盆底肌肉的广泛拉伸或损伤引起的。分娩后三个月尿失禁的危险因素包括肥胖、产次、吸烟、较长时间的哺乳以及阴道分娩时使用产钳。建议女性定期进行凯格尔运动以加强盆底肌肉。其他考虑因素还包括膀胱训练和体重减轻作为一线治疗的一部分。重要的是要让新妈妈知道，超过四分之一的女性在产后第一年经历中度或重度尿失禁。</span></p><p><strong><span>痔疮：</span></strong><span>由便秘和/或在分娩的第二阶段用力推动引起。治疗的第一线包括增加水分和纤维摄入量以及软化粪便剂。一些人可能需要切除或结扎难治性痔疮或三度以上的痔疮。</span></p></blockquote><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><div class='footnotes-area'  ><hr/>
+<div class='footnote-line'><span class='md-fn-count'>1</span> <span>Woody, C. A.; Ferrari, A. J.; Siskind, D. J.; Whiteford, H. A.; Harris, M. G. (1 September 2017). </span><a href='https://www.sciencedirect.com/science/article/pii/S0165032717307231'><span>&quot;A systematic review and meta-regression of the prevalence and incidence of perinatal depression&quot;</span></a><span>. </span><em><span>Journal of Affective Disorders</span></em><span>. </span><strong><span>219</span></strong><span>: 86–92. </span><a href='https://en.wikipedia.org/wiki/Doi_(identifier)'><span>doi</span></a><span>:</span><a href='https://doi.org/10.1016%2Fj.jad.2017.05.003'><span>10.1016/j.jad.2017.05.003</span></a><span>. </span><a href='https://en.wikipedia.org/wiki/ISSN_(identifier)'><span>ISSN</span></a><span> </span><a href='https://www.worldcat.org/issn/0165-0327'><span>0165-0327</span></a><span>. </span><a href='https://en.wikipedia.org/wiki/PMID_(identifier)'><span>PMID</span></a><span> </span><a href='https://pubmed.ncbi.nlm.nih.gov/28531848'><span>28531848</span></a><span>.</span> <a name='dfref-footnote-1' href='#ref-footnote-1' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>2</span> <span>这里所说的科学可以简单理解为是经过科学实验和观察后得出的靠谱建议。</span> <a name='dfref-footnote-2' href='#ref-footnote-2' title='back to document' class='reversefootnote' >↩</a></div>
+<div class='footnote-line'><span class='md-fn-count'>3</span> <span>比如，请月嫂的话应该至少查验其是否持有育婴师职业资格证书，然后观察月嫂在一些基础护理方面的技能是否专业，如抱孩子的方式、换尿不湿的手法等等，如果连基础的都做不到基本就可以辞退了。当然了，这一切的前提是你得懂一些产后护理方面的基础知识。</span> <a name='dfref-footnote-3' href='#ref-footnote-3' title='back to document' class='reversefootnote' >↩</a></div></div></div></div>
+</body>
+</html>
