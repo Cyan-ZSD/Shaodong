@@ -8,4 +8,4 @@ tags: []
 draft: no
 ---
 
-this is just a test to see if I can create a link with [this](content/post/3-saying.html) html
+this is just a test to see if I can create a link with [this](3-saying.html) html
