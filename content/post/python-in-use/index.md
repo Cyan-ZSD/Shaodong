@@ -10,7 +10,7 @@ tags:
   - Tool
   - Practice
   - Regex
-draft: yes
+draft: no
 ---
 I have been using [Python](https://www.python.org) for a while and have recently come to realize how useful it is. This blog is intended to preserver codes I've created for my personal use.
 
