@@ -15,13 +15,13 @@ disqus: true
 ---
 I have been using [Python](https://www.python.org) for a while and have recently come to realize how useful it is. This blog is intended to preserver codes I've created for my personal use.
 
-I enjoy reading books in English on Wechat Reading (WR), though I am not much into Wechat itself. In recent years, WR has increasingly equipped itself with functions assisting readers in engaging with English books such as notes, lookup, auto-translation and pronunciation, etc. Among these, taking notes is as crucial as looing up for me. I have, therefore, underlined tons of English vocab while writing down notes. 
+I enjoy reading books in English on [Wechat Reading (WR)](https://weread.qq.com), though I am not much into Wechat itself. In recent years, WR has increasingly equipped itself with functions assisting readers in engaging with English books such as notes, lookup, auto-translation and pronunciation, etc. Among these, taking notes is as crucial as looing up for me. I have, therefore, underlined tons of English vocab while writing down notes. 
 
 However, whenever I want to extract the vocab from my notes on WR, the thing bothered me lot was that WR exports all underlined vocab and its notes where I left notes both in English and Chinese. **How can I pull out the vocab without any Chinese characters and duplicates?**
 
 ![](cn_and_eng.png)
 
-My solution is to use **Regular Expressions (Regex)**. Let me start by writing a basic structure:
+My solution is to use [Regular Expressions (Regex)](https://en.wikipedia.org/wiki/Regular_expression). Let me start by writing a basic structure:
 
 ```
 import re
