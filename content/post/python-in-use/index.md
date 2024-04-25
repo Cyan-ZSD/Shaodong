@@ -21,7 +21,7 @@ However, whenever I want to extract the vocab from my notes on WR, the thing bot
 
 <img src="cn_and_eng.png" style="zoom:50%;" />
 
-My solution is to use [Regular Expressions (Regex)](https://en.wikipedia.org/wiki/Regular_expression). Let me start by writing a basic structure:
+My solution is to use [Regular Expressions (Regex)](https://en.wikipedia.org/wiki/Regular_expression). Let me start by writing an outline of the code:
 
 ```
 import re
