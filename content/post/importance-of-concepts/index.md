@@ -1,6 +1,6 @@
 ---
 title: '为什么要学习系统的科学准确的概念？'
-author: Shaodng ZHANG
+author: Shaodong ZHANG
 date: '2024-01-07'
 slug: ''
 categories: []
