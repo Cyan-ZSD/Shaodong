@@ -4,6 +4,8 @@ author: Shaodong
 date: '2025-01-18'
 slug: ''
 categories: []
+katex: true
+mathjax: true
 tags:
   - 时间
   - 中文
@@ -20,10 +22,9 @@ disqus: true
 
 我们知道：
 
-
 $$
 \begin{align}
-\text{工作产出} \ (Output) = \text{时间投入} \ (Time) × \text{效率} \ (E)
+\text{工作产出} \ (Output) = \text{时间投入} \ (Time) \times \text{效率} \ (Efficiency)
 \end{align}
 $$
 
@@ -32,7 +33,7 @@ $$
 
 $$
 \begin{align}
-O_\downarrow = T * E_\downarrow
+O_\downarrow = T \times E_\downarrow
 \end{align}
 $$
 
