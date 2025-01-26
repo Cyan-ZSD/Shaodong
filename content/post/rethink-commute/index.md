@@ -23,7 +23,7 @@ disqus: true
 
 $$
 \begin{align}
-\text{工作产出} \ (O) = \text{时间投入} \ (T) \times \text{效率} \ (E)
+\text{工作产出} \ (Output) = \text{时间投入} \ (Time) × \text{效率} \ (E)
 \end{align}
 $$
 
@@ -31,7 +31,8 @@ $$
 
 
 $$
-\begin{align}O_\downarrow = T \times E_\downarrow
+\begin{align}
+O_\downarrow = T * E_\downarrow
 \end{align}
 $$
 
