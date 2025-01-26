@@ -22,16 +22,17 @@ disqus: true
 
 
 $$
-\text{工作产出} \, (O) = \text{时间投入} \, (T) \times \text{效率} \, (E)
+\begin{align}
+\text{工作产出} \ (O) = \text{时间投入} \ (T) \times \text{效率} \ (E)
+\end{align}
 $$
-
-
 
 当（加班后）时间T保持恒定，产出O减少时，说明效率E下降了：
 
 
 $$
-O_\downarrow = T \times E_\downarrow
+\begin{align}O_\downarrow = T \times E_\downarrow
+\end{align}
 $$
 
 
