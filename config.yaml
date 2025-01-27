@@ -31,9 +31,9 @@ menu:
 
 params:
   description: "About Learning"
-  social: 
+  social:
     email: "zhanshaoton@gmail.com"
-    github: "https://github.com/Cyan-ZSD"
+    github: "https://github.com/ShaodongDev"
     facebook: " "
     twitter: " "
   icon:
@@ -43,7 +43,7 @@ params:
     github: "/themes/TeXtLite/static/social/github.svg"
     facebook: "/themes/TeXtLite/static/social/facebook.svg"
   comments:
-    utterances: "Cyan-ZSD/comment-system"
+    utterances: "ShaodongDev/comment-system"
     disqus: "Shaodong-disqus"
     # Comment systems to include by default
     default:
